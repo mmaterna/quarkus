@@ -1,0 +1,11 @@
+/build
+/out
+/config/**
+/logs
+/settings
+/.idea
+/target
+/logs_testing
+.settings
+.classpath
+.project
