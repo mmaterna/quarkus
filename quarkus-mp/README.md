@@ -1,7 +1,7 @@
 Quarkus MP
 ==============
 
-Mostly Microprofile elements from quarkus, and other extensions, based on quarkus-quistarts: https://github.com/quarkusio/quarkus-quickstarts.
+Mostly Microprofile elements from quarkus, and other extensions, based on quarkus-quickstarts: https://github.com/quarkusio/quarkus-quickstarts.
 
 
 Configuration
