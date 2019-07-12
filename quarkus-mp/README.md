@@ -119,3 +119,28 @@ http://localhost:8080/hello/async/greeting/mari
 ```
 
 
+Native build on Windows 10 with WSL
+===================================
+
+1. Install WSL - Ubuntu 18.04 
+2. Download GRAALVM in supported version: https://github.com/oracle/graal/releases/tag/vm-1.0.0-rc16
+	1. Download: https://github.com/oracle/graal/releases/download/vm-1.0.0-rc16/graalvm-ce-1.0.0-rc16-linux-amd64.tar.gz
+	2. Unpack: `tar -xvzf ./graalvm-ce-1.0.0-rc16-linux-amd64.tar.gz`
+	
+2. In WSL/Ubuntu console:
+  
+  - set variable: `export GRAALVM_HOME=/<PATH_TOO_GRAALVM>`
+  - install build-essentials and necessary libraries `sudo apt install build-essentials zlib1g-dev`
+
+3. Build application
+
+```
+mvn clean package -Pnative -DskipTests
+```
+
+4. Run application
+
+```
+./target/quarkus-mp-runner
+```
+
